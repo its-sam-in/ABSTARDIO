@@ -1,0 +1,191 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'MS Sans Serif', 'Comic Sans MS', 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* GIF Background */
+.gif-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Behind other content */
+    background: url('assets/background_glitch.gif') no-repeat center center fixed;
+    background-size: cover; /* Cover the entire screen */
+}
+
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#splash-screen img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Main Content */
+#main-content {
+    position: relative;
+    z-index: 1; /* Above the background */
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+}
+
+.header-logo {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80px; /* Adjust based on your logo size */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Arcade Machine */
+.arcade-machine {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.aura {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.5), transparent);
+    border-radius: 20px;
+    animation: aura-glow 3s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes aura-glow {
+    0% {
+        box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 40px 20px rgba(0, 255, 255, 0.5);
+    }
+}
+
+.display {
+    width: 300px;
+    height: 300px;
+    background: black;
+    margin: 0 auto;
+}
+
+.display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.joystick {
+    margin-top: 20px;
+}
+
+.joystick button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px #d63031;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.1s ease;
+}
+
+.joystick button:active {
+    box-shadow: 0 2px #d63031;
+    transform: translateY(3px);
+}
+
+/* Wallet Check */
+.wallet-check {
+    margin-top: 20px;
+}
+
+.wallet-check input {
+    padding: 10px;
+    width: 200px;
+}
+
+.wallet-check button {
+    padding: 10px 20px;
+    background: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; /* Above the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff4757; /* Change color on hover */
+}
+
+#music-toggle {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#music-toggle:hover {
+    background: #666; /* Slightly lighter on hover */
+}
