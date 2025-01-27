@@ -6,6 +6,7 @@ body, html {
     color: white;
     text-align: center;
     height: 100%; /* Ensure body and html take full height */
+    overflow: hidden; /* Prevent scrolling */
 }
 
 /* GIF Background */
