@@ -2,7 +2,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling */
     font-family: 'MS Sans Serif', 'Comic Sans MS', 'Arial', sans-serif;
     color: white;
     text-align: center;
@@ -73,6 +72,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 20px; /* Add padding to prevent content from touching edges */
+    overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 /* Arcade Machine */
