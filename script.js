@@ -8,7 +8,10 @@ window.addEventListener('load', () => {
 });
 
 // Arcade Functionality
-const nftImages = ['assets/NFT1.jpeg', 'assets/NFT2.jpeg', 'assets/NFT3.jpeg', 'assets/NFT4.jpeg','assets/NFT.jpeg']; // Add your NFT images
+const nftImages = ['assets/download (80).png', 'assets/download (79).png', 'assets/download (78).png', 'assets/download (77).png',
+    'assets/download (76).png','assets/download (75).png','assets/download (74).png','assets/download (73).png','assets/download (72).png',
+'assets/download (71).png','assets/download (70).png','assets/download (69).png','assets/download (68).png','assets/download (67).png','assets/download (66).png',
+'assets/download (65).png','assets/download (64).png']; // Add your NFT images
 let currentIndex = 0;
 const phase1Wallets = ['wallet1', 'wallet2']; // Wallets eligible for Phase 1
 const phase2Wallets = ['wallet3', 'wallet4']; // Wallets eligible for Phase 2

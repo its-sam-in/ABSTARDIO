@@ -43,6 +43,7 @@ body, html {
 #main-content {
     position: relative;
     z-index: 1; /* Above the background */
+    padding-bottom: 60px; /* Add padding to prevent footer overlap */
 }
 
 /* Header */
@@ -65,7 +66,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    min-height: calc(100vh - 140px); /* Adjust height to account for header and footer */
 }
 
 /* Arcade Machine */
@@ -163,6 +164,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px; /* Space between icons */
+    height: 50px; /* Set a fixed height for the footer */
 }
 
 footer a {
