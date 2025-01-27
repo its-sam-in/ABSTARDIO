@@ -6,6 +6,7 @@ body, html {
     font-family: 'MS Sans Serif', 'Comic Sans MS', 'Arial', sans-serif;
     color: white;
     text-align: center;
+    height: 100%; /* Ensure body and html take full height */
 }
 
 /* GIF Background */
@@ -43,7 +44,10 @@ body, html {
 #main-content {
     position: relative;
     z-index: 1; /* Above the background */
-    padding-bottom: 60px; /* Add padding to prevent footer overlap */
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out header, main, and footer */
 }
 
 /* Header */
@@ -61,12 +65,14 @@ header {
     max-height: 80px; /* Adjust based on your logo size */
 }
 
+/* Main */
 main {
+    flex: 1; /* Take up remaining space */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 140px); /* Adjust height to account for header and footer */
+    padding: 20px; /* Add padding to prevent content from touching edges */
 }
 
 /* Arcade Machine */
@@ -156,8 +162,6 @@ main {
 footer {
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     z-index: 1; /* Above the background */
     display: flex;
@@ -165,6 +169,8 @@ footer {
     align-items: center;
     gap: 20px; /* Space between icons */
     height: 50px; /* Set a fixed height for the footer */
+    position: sticky; /* Stick to the bottom */
+    bottom: 0; /* Stick to the bottom */
 }
 
 footer a {
