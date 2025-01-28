@@ -222,11 +222,11 @@ footer a:hover {
     }
 
     .display {
-        height: 200px; /* Smaller display for mobile */
+        height: 345px; /* Smaller display for mobile */
     }
 
     .joystick button {
-        padding: 10px 20px; /* Smaller buttons for mobile */
+        padding: 15px 25px; /* Smaller buttons for mobile */
         font-size: 14px;
     }
 
