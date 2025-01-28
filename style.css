@@ -213,16 +213,22 @@ footer a:hover {
 
 /* For screens smaller than 600px (Mobile Phones) */
 @media (max-width: 600px) {
+    main {
+        padding: 60px;
+    }
     .header-logo {
         max-height: 60px; /* Smaller logo for mobile */
     }
+    .header {
+        padding: 10px;
+    }
 
     .arcade-machine {
-        padding: 15px; /* Reduce padding for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 
     .display {
-        height: 345px; /* Smaller display for mobile */
+        height: 260px; /* Smaller display for mobile */
     }
 
     .joystick button {
